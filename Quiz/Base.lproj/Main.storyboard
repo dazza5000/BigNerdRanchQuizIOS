@@ -30,11 +30,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZs-MN-XKK">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZs-MN-XKK">
                                 <rect key="frame" x="138" y="120" width="98" height="30"/>
                                 <state key="normal" title="Next Question"/>
                                 <connections>
-                                    <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lgh-k9-r4M"/>
                                     <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="puk-sn-UfX"/>
                                 </connections>
                             </button>
@@ -54,16 +53,15 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="YZs-MN-XKK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7LD-s9-0BV"/>
-                            <constraint firstItem="tmj-uL-I6j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="71" id="90l-ef-hN1"/>
+                            <constraint firstItem="fr4-Tz-vQ4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8sQ-4b-ayp"/>
+                            <constraint firstItem="tmj-uL-I6j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="71" id="90l-ef-hN1" userLabel="Current Question Label.top = Safe Area.top + 30"/>
+                            <constraint firstItem="hGu-Bt-l93" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C7Y-3d-vK5"/>
                             <constraint firstItem="tmj-uL-I6j" firstAttribute="centerX" secondItem="YZs-MN-XKK" secondAttribute="centerX" id="DzI-Zt-TfP"/>
-                            <constraint firstItem="fr4-Tz-vQ4" firstAttribute="centerX" secondItem="YZs-MN-XKK" secondAttribute="centerX" id="MvW-gp-7A3"/>
-                            <constraint firstItem="tmj-uL-I6j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RNy-rk-JhO"/>
                             <constraint firstItem="hGu-Bt-l93" firstAttribute="top" secondItem="tmj-uL-I6j" secondAttribute="top" id="RkP-Cc-KVb"/>
                             <constraint firstItem="fr4-Tz-vQ4" firstAttribute="top" secondItem="8rb-th-tOn" secondAttribute="bottom" constant="8" id="WHk-hI-4xz"/>
-                            <constraint firstItem="8rb-th-tOn" firstAttribute="top" secondItem="YZs-MN-XKK" secondAttribute="bottom" constant="166" id="aok-ix-1A4"/>
-                            <constraint firstItem="hGu-Bt-l93" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fUJ-87-D0H"/>
-                            <constraint firstItem="8rb-th-tOn" firstAttribute="centerX" secondItem="YZs-MN-XKK" secondAttribute="centerX" id="gez-bX-Xon"/>
+                            <constraint firstItem="8rb-th-tOn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sZ8-O8-Nck"/>
+                            <constraint firstItem="YZs-MN-XKK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="tHl-jn-XaV"/>
+                            <constraint firstItem="YZs-MN-XKK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xMa-ap-0Fa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -72,11 +70,12 @@
                         <outlet property="currentQuestionLabel" destination="tmj-uL-I6j" id="zTO-gh-ut1"/>
                         <outlet property="currentQuestionLabelCenterXConstraint" destination="DzI-Zt-TfP" id="ueP-FE-18b"/>
                         <outlet property="nextQuestionLabel" destination="hGu-Bt-l93" id="VYC-MN-kB3"/>
-                        <outlet property="nextQuestionLabelCenterXConstraint" destination="fUJ-87-D0H" id="EIe-if-jja"/>
+                        <outlet property="nextQuestionLabelCenterXConstraint" destination="C7Y-3d-vK5" id="3gb-4k-qw5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="31.934032983508249"/>
         </scene>
     </scenes>
 </document>
